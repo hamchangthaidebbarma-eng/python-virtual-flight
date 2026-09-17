@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-virtual-flight"
+version = "0.1.0"
+description = "A virtual drone flight mission powered by PySimVerse"
+requires-python = ">=3.9"
+dependencies = [
+    "pysimverse==0.14",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
